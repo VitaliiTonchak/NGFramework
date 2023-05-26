@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NGFramework"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of NGFramework."
   spec.description  = <<-DESC
 This framework will hide all of its implementations and won't allow users to see the source code 
@@ -11,7 +11,7 @@ This framework will hide all of its implementations and won't allow users to see
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Vitalii Tonchak" => "vitalii.tonchak@soprasteria.com" }
   spec.ios.deployment_target = "15.0"
-  spec.ios.vendored_frameworks  = "NGFramework.framework"
+  spec.vendored_frameworks  = "NGFramework.xcframework"
   spec.source       = { :git => "https://github.com/VitaliiTonchak/NGFramework.git", :tag => "#{spec.version}" }
   spec.exclude_files = "Classes/Exclude"
 
